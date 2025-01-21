@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200&family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    background-color: #191919;
+    background-size: 100%;
+}
+
+/* começo do cabeçalho */
+.header, .navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    .header{
+    background-color: #303030;
+    box-shadow: 1px 1px 4px #1c1c1c;
+    height: 5.0em;
+    justify-content: space-between;
+    padding: 0 10%;
+    
+    }
+    .navigation_header{
+        gap: 3em;
+    }
+    
+    .logo_header h1{
+        font-family: 'Lobster', cursive;
+        font-size: 45px;
+        color: #fdc009;
+    }
+    
+    .navigation_header a{
+        text-decoration: none;
+        color: white;
+        transition: 0.4s;
+        font-weight: bold;
+    }
+    .active:hover{
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #6d6d6d;
+    }
+    /* fim do cabeçalho */
+
+    .topic h1{
+      color: #fdc009;
+      font-size: 80px;
+      margin-left: 20px;
+  }
+
+  /* pizzas */
+#cardapio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 90px;
+  width: 100%;
+  overflow-x: scroll;
+}
+#cardapio::-webkit-scrollbar {
+  display: none;
+  overflow-y: scroll;
+}
+
+#cardapio img {
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
+}
+
+#item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0,0,0, 0.85);
+  margin: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  height: 500px;
+  width: 100%;
+}
+/* fim pizza */
+
+
+
+/* bebidas */
+#cardapio-bebida {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 90px;
+  width: 100%;
+  overflow-x: scroll;
+}
+#cardapio-bebida::-webkit-scrollbar {
+  display: none;
+  overflow-y: scroll;
+}
+
+#cardapio-bebida img {
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
+  margin-left: 53px;
+}
+
+#agua {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0,0,0, 0.85);
+  margin: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  height: 500px;
+  width: 100%;
+}
+
+#agua img{
+  padding: 10px;
+  width: 200px;
+  height: 300px;
+  border-radius: 50px;
+  margin-left: 102px;
+}
+
+
+#item-bebida {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0,0,0, 0.85);
+  margin: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  height: 500px;
+  width: 100%;
+}
+/* fim bebidas */

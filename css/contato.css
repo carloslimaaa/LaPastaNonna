@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200&family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* começo do cabeçalho */
+.header, .navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    .header{
+    background-color: #303030;
+    box-shadow: 1px 1px 4px #1c1c1c;
+    height: 5.0em;
+    justify-content: space-between;
+    padding: 0 10%;
+    }
+    .navigation_header{
+        gap: 3em;
+    }
+    
+    .logo_header h1{
+        font-family: 'Lobster', cursive;
+        font-size: 45px;
+        color: #fdc009;
+    }
+    
+    .navigation_header a{
+        text-decoration: none;
+        color: white;
+        transition: 0.4s;
+        font-weight: bold;
+    }
+    .active:hover{
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #6d6d6d;
+    }
+    /* fim do cabeçalho */
+
+section{
+    padding: 40px 15%;
+}
+.contact{
+    background: #101010;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+.contact-form h1{
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+span{
+    color: #fdc009;
+}
+.contact-form p{
+    color: #c6c9d8bf;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input,
+form textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+.contact-form form .btn{
+    display: inline-block;
+    background: #fdc41ad3;
+    font-size: 1.1rem;
+    letter-spacing: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 190px;
+    height: 58px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+.contact-form form .btn:hover{
+    border: 2px solid #fdc41ad3;
+    background: transparent;
+    transform: scale(1.1);
+}
+
+
+/* rodapé */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #eaa023;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+/* fim rodapé */

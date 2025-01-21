@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200&family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* começo do cabeçalho */
+.header, .navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    .header{
+    background-color: #303030;
+    box-shadow: 1px 1px 4px #1c1c1c;
+    height: 5.0em;
+    justify-content: space-between;
+    padding: 0 10%;
+    }
+    .navigation_header{
+        gap: 3em;
+    }
+    
+    .logo_header h1{
+        font-family: 'Lobster', cursive;
+        font-size: 45px;
+        color: #fdc009;
+    }
+    
+    .navigation_header a{
+        text-decoration: none;
+        color: white;
+        transition: 0.4s;
+        font-weight: bold;
+    }
+    .active:hover{
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #6d6d6d;
+    }
+    /* fim do cabeçalho */
+
+
+
+.about{
+    width: 100%;
+    height: 869px;
+    padding: 78px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 520px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color: white;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.about-text p{
+    color: #c6c9d8bf    ;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background: #fdc41ad3;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid #fdc009;
+    color: white;
+}
+span{
+    color: #ffbf00;
+}
+
+
+/* rodapé */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #eaa023;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+/* fim rodapé */

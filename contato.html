@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venha encomendar sua pizza na melhor pizzaria do Brasil!">
+    <meta name="keywords" content="Pizzaria, Pizza, Comida">
+    <meta name="author" content="Nimble Software">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="icon" type="images/x-icon" href="https://o.remove.bg/downloads/5a91edaa-4785-4447-aae6-a8421d2b3d33/imagem_2023-03-07_214634158-removebg-preview.png">
+    <title>Contato</title>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="logo_header">
+            <h1>La Pasta Nonna</h1>
+        </div> 
+        <div class="navigation_header">
+            <a href="index.html" class="active">Home</a>
+            <a href="cardapio.html" class="active">Cardápio</a>
+            <a href="sobre.html" class="active">Sobre Nós</a>
+            <a href="contato.html" class="active">Contato</a>
+        </div>
+    </div>
+
+
+    <section class="contact">
+        <div class="contact-form">
+            <h1>Contate<span>-nos</span></h1>
+            <p>Nós estamos sempre empenhados em fornecer aos nossos clientes uma experiência gastronômica autêntica, saudável e deliciosa. Nós acreditamos que a verdadeira arte da pizza está em seus ingredientes, e é por isso que utilizamos apenas os melhores ingredientes naturais em todas as nossas pizzas.</p>
+            
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="" id="name" placeholder="Seu Nome" required>
+                <input type="email" name="email
+                " id="email" placeholder="E-mail" required>
+                <input type="" id="assunto" placeholder="Assunto" required>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Sua Mensagem" required></textarea>
+                <input type="submit" id="send" name="" value="Enviar
+                " class="btn">
+            </form>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d276.8091488772528!2d-47.770888737286874!3d-21.02127404772533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b99336e3db4027%3A0x51c948baf3c3599f!2sR.%20S%C3%A3o%20Sebasti%C3%A3o%2C%2075%20-%20Jardim%20Nove%20de%20Julho%2C%20Jardin%C3%B3polis%20-%20SP%2C%2014680-000!5e0!3m2!1spt-BR!2sbr!4v1678335902891!5m2!1spt-BR!2sbr" width="600" height="550" style="margin-left: 20%; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+    <!--rodapé-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Nossa Localização</h4>
+                    <ul>
+                        <li><a href="#">Jardim Nove de Julho</a></li>
+                        <li><a href="#">Rua São Sebastião, 75</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quando Abrimos</h4>
+                    <ul>
+                        <li><a href="#">Segunda a Sábado</a></li>
+                        <li><a href="#">9:00 - 22:00</a></li>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos Contate</h4>
+                    <ul>
+                        <li><a href="#">16 99405-1123</a></li>
+                        <li><a href="#">lapastanona@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga Nossa Pizzaria</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100090691491697"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/lapastanonna"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nonna_lapastaoficial/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+</body>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken : "1ae4cce8-e7c7-4cc3-88e7-eba87648659c",
+                To : 'lapastanona@gmail.com',
+                From : "lapastanona@gmail.com",
+                Subject : "Novo Email de Contato!",
+                Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Assunto: " + document.getElementById("assunto").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+                message => alert("Enviado com Sucesso!")
+            );
+        }
+    </script>
+</html>
