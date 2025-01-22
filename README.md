@@ -37,4 +37,4 @@ Agradecemos a todos os professores que orientaram o desenvolvimento deste projet
 
 ---
 
-🔗 **Visite o site**: [[www.lapastanonna.com](#)](https://carloslimaaa.github.io/LaPastaNonna/)
+🔗 **Visite o site**: https://carloslimaaa.github.io/LaPastaNonna/
