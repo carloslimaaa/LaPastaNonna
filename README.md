@@ -31,12 +31,6 @@ Se você deseja contribuir para este projeto, siga as etapas abaixo:
 
 ---
 
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
----
-
 ## Agradecimentos
 
 Agradecemos a todos os professores que orientaram o desenvolvimento deste projeto e aos alunos que participaram da criação das empresas no curso técnico. Este site é o resultado do esforço conjunto e do aprendizado compartilhado ao longo do processo.
