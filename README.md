@@ -1,4 +1,4 @@
-# La Pasta Nonna - Pizzaria Online 🍕
+# La Pasta Nonna - Pizzaria 🍕
 
 Bem-vindo ao repositório do site da **La Pasta Nonna**, uma pizzaria criada com o objetivo de proporcionar uma experiência gastronômica única, com pizzas feitas a partir de ingredientes naturais e de alta qualidade. Este projeto foi solicitado pelos professores como parte de uma tarefa acadêmica de um curso técnico e, entre 8 empresas criadas pelos alunos, esse projeto foi escolhido para ser o vencedor.
 
